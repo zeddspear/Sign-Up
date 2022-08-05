@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Nunito&family=Nunito+Sans&family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+.container{
+    font-family: 'Kdam Thmor Pro' , sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+/* left side ----------------*/
+
+.left-pic{
+    flex-grow: 1;
+    min-width: 345px;
+    background-image: url(https://images.unsplash.com/photo-1553272725-086100aecf5e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80);
+    width: 40vw;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: rgb(14, 9, 10);
+}
+
+.logopic{
+    width: 40vw;
+    height: 100vh;
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0.48);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 150px;
+
+}
+
+img{
+    
+    width: 30%;
+    height: 80%;
+}
+
+.left-pic p {
+
+    position: absolute;
+    bottom: 20px;
+    color: rgb(238, 199, 205);
+    right: 20px;
+    font-size: 0.8rem;
+}
+
+/* Rght side ------------------ */
+
+.Form-section{
+    background-color: rgb(245, 222, 225) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60vw;
+    flex-grow: 2;
+
+
+}
+
+.Heading {
+    margin-bottom: 30px;
+    margin-left: 30px;
+
+}
+
+.Form{
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(247, 238, 228);
+    padding: 1.3rem 2vw 3rem 2vw;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.123);
+}
+
+.Form h2 {
+    margin-bottom: 10px ;
+}
+
+form{
+    display: flex;
+    flex-flow: row wrap;
+    width: 35vw;
+    gap: 1rem;
+    font-size: 1rem;
+}
+
+.submit-section{
+    margin-top: 2rem;
+    margin-left: 2rem ;
+}
+
+a{
+    text-decoration: none;
+    color:  rgb(145, 92, 98);
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin-bottom: 5px;
+    font-family: inherit;
+    background-color: rgb(173, 140, 144) ;
+    cursor: pointer;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.123);
+    font-size: 14px;
+}
+
+button:active{
+    transform: scale(0.95);
+}
+
+
+
+
+input{
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(224, 224, 224) ;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+input:focus{
+   border: none;
+   outline: none;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.342);
+}
+
+
+input:focus:valid{
+    border: 1px solid rgb(157, 241, 157);
+}
+
+input:focus:invalid{
+    border: 1px solid rgb(255, 118, 118);
+}
+
+
+@media screen and (max-width: 690px )  {
+
+    .container{
+        flex-direction: column;
+    }
+    
+    .left-pic{
+        
+        width: 100vw;
+        height: 20rem;
+        padding: 300px;
+    }
+
+    .logopic{
+        transform: translateY(250px);
+        width: 100vw;
+        height: 20%;
+    }
+
+    .Heading,.Form-section,.btn{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Form-section{
+        width: 100vw;
+    }
+
+    .Heading{
+        margin-top: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
